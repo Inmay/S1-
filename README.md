@@ -1,7 +1,7 @@
 # stage1st-vue
 
 > A Vue.js project
-
+![img](https://github.com/Inmay/stage1st_vue/blob/master/1111111.png?raw=true)
 ## Build Setup
 
 ``` bash
