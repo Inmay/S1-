@@ -1,0 +1,8 @@
+基本
+http://bbs.saraba1st.com/2b/api/mobile/index.php?mobile=no&orderby=dblastpost&submodule=checkpost&version=1
+
+
+帖子列表
+module=forumdisplay   fid=?  page=?   tpp=50(50个贴)
+贴列表
+module=viewthread		tid=?  page=?   ppp=?(?个帖子)
