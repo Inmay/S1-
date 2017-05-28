@@ -17,6 +17,7 @@ export default new Vuex.Store({
         selectedThread:{ type:Object},
         threadlist:{type:Object},
         postlist:{type:Object},
+        readpage:1,
     },
     mutations:{
         selected(state,obj) {
@@ -50,6 +51,7 @@ export default new Vuex.Store({
         },
         getPostlist(state,page) {     
             // console.log(state.selectedThread.tid)
+            state.readpage = page
              let tempurl = '&module=viewthread&ppp=30&tid='+state.selectedThread.tid+'&page='+page;
              axios({
                 url:'/s1api'+tempurl,

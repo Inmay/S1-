@@ -1,13 +1,16 @@
 <template>
-   
-    <Card style="width:100%" >
-        <div style="text-align:left" >
-            <div v-html="testdiv"> 
-               
-            </div>
-            <h6>{{thread_post.author}}</h6>
-        </div>
-    </Card>
+         
+          <Card  >
+                <div class="v_body">
+                    <div class="avatar">
+                          <p>{{thread_post.author}}</p>
+                     </div>
+                    <div>
+                     <div v-html="testdiv" class="content">  </div>
+                     </div>
+                </div>
+          </Card>
+
 </template>
 
 <script>
@@ -32,5 +35,19 @@ export default {
 </script>
 
 <style>
+    .v_body{
+        
+        display:flex;
+        width:100%;
+    }
+    .avatar{
+        flex:0 0 80px;
+        height:25px;
+    }
+    .content{
+        flex:1;
+        text-align:left;
+        margin:10px 7px 17px 3px;
 
+    }
 </style>
